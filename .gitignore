@@ -1,0 +1,4 @@
+/.vscode/
+/dist/pkg/
+/dist/test-node.js
+/node_modules/

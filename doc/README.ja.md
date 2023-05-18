@@ -15,17 +15,13 @@
     </a>
 </p>
 
-Natural language detection library for CommonJS.
+自然言語検出ライブラリの CommonJS バージョン。
 
-## Languages
-
-[简体中文](doc/README.sc.md) | [繁體中文](doc/README.tc.md) | [日本語](doc/README.ja.md)
-
-## Installation
+## インストール
 
 ### NPM
 
-You can install it directly through the npm command.
+npm コマンドを使用して直接インストールすることができます。
 
 ```sh
 $ npm i franc-cjs --save
@@ -33,15 +29,15 @@ $ npm i franc-cjs --save
 
 ### CDN
 
-If you're using it in a browser, you can utilize the CDN mode.
+ブラウザで使用する場合は、CDNモードを使用できます：
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@litert/loader@3.5.0/dist/loader.min.js?path=index&npm={'franc-cjs':'6.1.0.0'}"></script>
 ```
 
-## Usage
+## 使用
 
-Demo code is written using TypeScript.
+デモコードは TypeScript で書かれています。
 
 ```typescript
 import * as franc from './index';
@@ -53,22 +49,22 @@ franc.franc('今日の天気はとてもいいですね、どう思いますか�
 franc.franc('今天的天气真好，你觉得呢？我觉得就是这样。');  // cmn
 ```
 
-## Test
+## サンプル
 
 ### Node
 
-Once it's compiled correctly, you can run the sample code in the terminal by using `node ./dist/test-node`.
+正しくコンパイルした後、ターミナルで `node ./dist/test-node` を使用してサンプルコードを実行できます。
 
-### Browser
+### ブラウザ
 
-To view the examples, simply access the `test/` directory in your browser.
+ブラウザで `test/` ディレクトリにアクセスしてサンプルを表示できます。
 
-[Click here to view the examples online](https://maiyun.github.io/franc-cjs/test/)
+[ここをクリックしてオンラインでサンプルを表示](https://maiyun.github.io/franc-cjs/test/)
 
-## Original
+## オリジナル
 
-This library is the CommonJS version of [franc](https://github.com/wooorm/franc) library. If you need the ESM-only version, please use the original version directly. This library will be updated in sync with [franc](https://github.com/wooorm/franc) library.
+このライブラリは [franc](https://github.com/wooorm/franc) ライブラリの CommonJS バージョンです。ESM only のバージョンが必要な場合は、オリジナルのライブラリを直接使用してください。このライブラリは [franc](https://github.com/wooorm/franc) ライブラリと同期して更新されます。
 
-## License
+## ライセンス
 
-This library is published under [MIT](./LICENSE) license.
+このライブラリは [MIT](../LICENSE) ライセンスで提供されています。
