@@ -26,30 +26,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.franc = exports.francAll = void 0;
 const pkgFranc = __importStar(require("./pkg/index"));
 function francAll(value, options = {}) {
-    const list = pkgFranc.francAll(value, options);
-    if (list[0][0] === 'bul') {
-        if (inArray(value, ['ё', 'ы', 'э'])) {
-            list.splice(0, 1);
-        }
-    }
-    if (list[0][0] === 'mkd') {
-        if (inArray(value, ['ё', 'ы', 'э', 'ъ', 'ь', 'й', 'щ'])) {
-            list.splice(0, 1);
-        }
-    }
-    return list;
+    return pkgFranc.francAll(value, options);
 }
 exports.francAll = francAll;
 function franc(value, options = {}) {
     return francAll(value, options)[0][0];
 }
 exports.franc = franc;
-function inArray(str, arr) {
-    for (const char of arr) {
-        if (!str.includes(char)) {
-            continue;
-        }
-        return true;
-    }
-    return false;
-}

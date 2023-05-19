@@ -12,20 +12,7 @@ interface IOptions {
  * @param options 选项
  */
 export function francAll(value: string, options: IOptions = {}) {
-    const list = pkgFranc.francAll(value, options);
-    if (list[0][0] === 'bul') {
-        // --- 判断是不是保加利亚语 ---
-        if (inArray(value, ['ё', 'ы', 'э'])) {
-            list.splice(0, 1);
-        }
-    }
-    if (list[0][0] === 'mkd') {
-        // --- 判断是不是保加利亚语 ---
-        if (inArray(value, ['ё', 'ы', 'э', 'ъ', 'ь', 'й', 'щ'])) {
-            list.splice(0, 1);
-        }
-    }
-    return list;
+    return pkgFranc.francAll(value, options);
 }
 
 /**
@@ -35,19 +22,4 @@ export function francAll(value: string, options: IOptions = {}) {
  */
 export function franc(value: string, options: IOptions = {}): string {
     return francAll(value, options)[0][0];
-}
-
-/**
- * --- 判断字符串中是否存在数组中的字符 ---
- * @param str 要判断的字符串
- * @param arr 字符列表数组
- */
-function inArray(str: string, arr: string[]): boolean {
-    for (const char of arr) {
-        if (!str.includes(char)) {
-            continue;
-        }
-        return true;
-    }
-    return false;
 }

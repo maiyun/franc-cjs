@@ -46,7 +46,9 @@ Demo code is written using TypeScript.
 ```typescript
 import * as franc from './index';
 
-franc.francAll('Сегодня погода такая хорошая, ты что думаешь? Я думаю, что просто так.');  // [['rus', 0.988008623012665], ['bos', 0.9611964430072757], ... ]
+franc.francAll('Сегодня погода такая хорошая, ты что думаешь? Я думаю, что просто так.', {
+    'only': ['cmn', 'rus', 'jpn']
+});  // [['rus', 1]]
 franc.franc('O tempo está realmente bom hoje, o que você acha? Eu acho que é isso.');  // por
 franc.franc('The weather is really nice today, don\'t you think? I think it\'s just perfect.');  // eng
 franc.franc('今日の天気はとてもいいですね、どう思いますか？私はこれがちょうどいいと思います。');  // jpn

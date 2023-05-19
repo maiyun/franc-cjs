@@ -1,6 +1,8 @@
 import * as franc from './index';
 
-console.log(franc.francAll('Сегодня погода такая хорошая, ты что думаешь? Я думаю, что просто так.'));
+console.log(franc.francAll('Сегодня погода такая хорошая, ты что думаешь? Я думаю, что просто так.', {
+    'only': ['cmn', 'rus', 'jpn']
+}));
 
 console.log(franc.franc('O tempo está realmente bom hoje, o que você acha? Eu acho que é isso.'));
 
