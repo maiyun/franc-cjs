@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "outDir": "dist/",
+        "rootDir": "src/",
+        "declaration": true,
+        "emitDeclarationOnly": true
+    },
+    "files": [
+        "./src/index.ts"
+    ]
+}

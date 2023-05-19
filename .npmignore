@@ -6,4 +6,4 @@
 /test/
 /.gitignore
 /.npmignore
-/tsconfig.json
+/tsconfig.*
