@@ -1,6 +1,6 @@
 {
     "name": "franc-cjs",
-    "version": "6.1.0.0",
+    "version": "6.1.0",
     "description": "Natural language detection, for CommonJS.",
     "keywords": [
         "language",
