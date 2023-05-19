@@ -36,7 +36,7 @@ $ npm i franc-cjs --save
 If you're using it in a browser, you can utilize the CDN mode.
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@litert/loader@3.5.0/dist/loader.min.js?path=index&npm={'franc-cjs':'6.1.0-patch.2'}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@litert/loader@3.5.0/dist/loader.min.js?path=index&npm={'franc-cjs':'6.1.0-patch.3'}"></script>
 ```
 
 ## Usage
