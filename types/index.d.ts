@@ -15,4 +15,3 @@ export declare function francAll(value: string, options?: IOptions): any;
  * @param options 选项
  */
 export declare function franc(value: string, options?: IOptions): string;
-export {};

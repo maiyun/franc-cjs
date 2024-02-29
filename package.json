@@ -1,13 +1,17 @@
 {
     "name": "franc-cjs",
-    "version": "6.1.0-patch.3",
+    "version": "6.2.0",
     "description": "Natural language detection, for CommonJS.",
     "keywords": [
         "language",
         "detection",
         "commonjs"
     ],
-    "main": "./dist/index.js",
+    "main": "dist/index.js",
     "author": "hanguoshuai",
-    "license": "MIT"
+    "license": "MIT",
+    "types": "./types/index.d.ts",
+    "devDependencies": {
+        "typescript": "^5.3.3"
+    }
 }
